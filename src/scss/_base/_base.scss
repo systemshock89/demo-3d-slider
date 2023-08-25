@@ -1,0 +1,21 @@
+html {
+  font-size: 16px;
+}
+
+body, html {
+  height: 100dvh;
+}
+
+body {
+  @media only screen and (max-width: 767px) {
+    font-size: rem(14);
+  }
+  color: #333;
+  line-height: 1.65;
+
+  min-width: 320px;
+  position: relative;
+
+  overflow-x: hidden;
+  background-color: #fff;
+}
