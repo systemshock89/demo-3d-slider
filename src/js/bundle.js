@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper';
+import LazyLoad from "vanilla-lazyload";
 
 'use strict';
 
@@ -18,5 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelector('.showcase__video').playbackRate = 2; // ускорим видео в 2 раза
+
+    const lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy",
+        use_native: true,
+    });
 
 });
